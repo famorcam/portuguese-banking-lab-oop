@@ -5,24 +5,24 @@ Credit to the [Data Science Working Group](http://datascience.codeforsanfrancisc
 Begin reading `instructions.md` to get started.
 
 ## Project Intro/Objective
-The purpose of this project is ________. (Describe the main goals of the project and potential civic impact. Limit to a short paragraph, 3-6 Sentences)
+The purpose of this project is to engineer a pipeline to analyze stock data. Specifically, we have used the pipeline to calculate the mean, median and standard deviation of a data set comprised of 9 weeks of stock data. Following the completion of this pipeline, we will integrate text data in the form of news headlines, to determine how reliable sentiment can predict stock prices.
 
 ### Methods Used
-* Inferential Statistics
-* Machine Learning
-* Data Visualization
-* Predictive Modeling
-* etc.
+* OOP
+* Debugging
 
 ### Technologies
-* R 
 * Python
-* D3
-* PostGres, MySql
-* Pandas, jupyter
-* HTML
-* JavaScript
-* etc. 
 
 ## Project Description
-(Provide more detailed overview of the project.  Talk a bit about your data sources and what questions and hypothesis you are exploring. What specific data analysis/visualization and modelling work are you using to solve the problem? What blockers and challenges are you facing?  Feel free to number or bullet point things here)
+This project runs a validation script to test the correct output of steps 1-3. The primary challenge was in understanding how exactly how one manipulates the data structure into a format that can be used to satisfy each step; i.e. into a structure we can take the mean, median and std dev of. Each defined function uses a sequence of steps to properly format the data from a csv file to list of lists that we can work with. We must:
+
+* drop the first element in each row of data 
+* drop any missing values
+* convert each element in each row from type String to type Float
+
+The final step of each function is to execute code that satisfies either finding the mean, median, or standard deviation; dependent on each part of the project.
+
+The most vital tool for this project was debugging. I primarily used a print() statement to check if the changes I made led me one step closer to the end goal.
+
+The most challenging aspect for me was figuring out how to make my code less verbose.

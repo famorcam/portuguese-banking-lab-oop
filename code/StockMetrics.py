@@ -18,16 +18,30 @@ class StockMetrics(StockData):
         """
         averages = []
         for row in self.data:
-            ...
-
+            week = row[1:]
+            cleaned_week = [float(price) for price in week if price.strip()]
+            # list comprehension that converts each 'price' in 'week' to a float 
+            # and only includes a 'price' element in 'cleaned_week'
+            # if 'price.strip()' is NOT an empty string
+            averages.append(round(stats.mean(cleaned_week), 3))
         return averages
 
     def median02(self):
         """pt2
         """
-        ...
-
+        median = []
+        for row in self.data:
+            week = row[1:]
+            cleaned_week = [float(price) for price in week if price.strip()]
+            median.append(stats.median(cleaned_week))
+        return median
+    
     def stddev03(self):
         """pt3
         """
-        ...
+        stddev = []
+        for row in self.data:
+            week = row[1:]
+            cleaned_week = [float(price) for price in week if price.strip()]
+            stddev.append(round(stats.stdev(cleaned_week), 3))
+        return stddev
