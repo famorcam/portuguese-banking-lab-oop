@@ -1,9 +1,5 @@
 # README
 
-Credit to the [Data Science Working Group](http://datascience.codeforsanfrancisco.org) for this template. To complete this project, delete all template text (save for the headers) and fill in your own information.
-
-Begin reading `instructions.md` to get started.
-
 ## Project Intro/Objective
 The purpose of this project is to engineer a pipeline to analyze stock data. Specifically, we have used the pipeline to calculate the mean, median and standard deviation of a data set comprised of 9 weeks of stock data. Following the completion of this pipeline, we will integrate text data in the form of news headlines, to determine how reliable sentiment can predict stock prices.
 
@@ -23,6 +19,6 @@ This project runs a validation script to test the correct output of steps 1-3. T
 
 The final step of each function is to execute code that satisfies either finding the mean, median, or standard deviation; dependent on each part of the project.
 
-The most vital tool for this project was debugging. I primarily used a print() statement to check if the changes I made led me one step closer to the end goal.
+The most vital tool for this project was debugging. I primarily used print() statements to check if the changes I made led me one step closer to the end goal.
 
 The most challenging aspect for me was figuring out how to make my code less verbose.
